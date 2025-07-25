@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RB Events</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: #003060;
+      margin-bottom: 8px;
+    }
+    .contact-info, .services, .reservation-form {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .contact-info a {
+      color: #004080;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      main {
+        padding: 0 10px;
+      }
+    }
+    .gallery {
+      margin-bottom: 20px;
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .gallery-grid img {
+      width: 250px;
+      border-radius: 8px;
+    }
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .pricing .package {
+      flex: 1;
+      min-width: 250px;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .package ul {
+      margin-top: 8px;
+      padding-left: 20px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RB Events</h1>
+    <p>Elegant. Memorable. Professional.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>RB Events specializes in transforming your events into unforgettable experiences. Whether it's a baby shower, birthday, engagement, or community celebration, we bring creativity and professionalism to every detail.</p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <div class="services">
+        <ul>
+          <li>Weddings</li>
+          <li>Graduations</li>
+          <li>Anniversaries</li>
+          <li>Birthdays</li>
+          <li>Baby Showers</li>
+          <li>Bridal Showers</li>
+          <li>Cleaning Service</li>
+          <li>Rental Accessories (Chair & Table Covers)</li>
+        </ul>
+        <p><em>and others...</em></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+
+      <div class="gallery">
+        <h3>Weddings</h3>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/250x180?text=Wedding+Decor+1" alt="Wedding Decor 1">
+          <img src="https://via.placeholder.com/250x180?text=Wedding+Decor+2" alt="Wedding Decor 2">
+        </div>
+
+        <h3>Graduations</h3>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/250x180?text=Graduation+Decor+1" alt="Graduation Decor 1">
+          <img src="https://via.placeholder.com/250x180?text=Graduation+Decor+2" alt="Graduation Decor 2">
+        </div>
+
+        <h3>Anniversaries</h3>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/250x180?text=Anniversary+Decor+1" alt="Anniversary Decor 1">
+          <img src="https://via.placeholder.com/250x180?text=Anniversary+Decor+2" alt="Anniversary Decor 2">
+        </div>
+
+        <h3>Birthdays</h3>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/250x180?text=Birthday+Decor+1" alt="Birthday Decor 1">
+          <img src="https://via.placeholder.com/250x180?text=Birthday+Decor+2" alt="Birthday Decor 2">
+        </div>
+
+        <h3>Baby Showers</h3>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/250x180?text=Baby+Shower+Decor+1" alt="Baby Shower Decor 1">
+          <img src="https://via.placeholder.com/250x180?text=Baby+Shower+Decor+2" alt="Baby Shower Decor 2">
+        </div>
+
+        <h3>Bridal Showers</h3>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/250x180?text=Bridal+Shower+Decor+1" alt="Bridal Shower Decor 1">
+          <img src="https://via.placeholder.com/250x180?text=Bridal+Shower+Decor+2" alt="Bridal Shower Decor 2">
+        </div>
+      </div>
+      <p style="font-size: 0.9em;">* Replace with your own images.</p>
+    </section>
+
+    <section>
+      <h2>Pricing Packages</h2>
+      <div class="pricing">
+        <div class="package">
+          <h3>Basic Package</h3>
+          <p>Perfect for small events. Includes simple decor and 1 backdrop setup.</p>
+          <p><strong>$300+</strong></p>
+          <ul>
+            <li>Backdrop decoration</li>
+            <li>Table centerpieces</li>
+            <li>Basic floral arrangements</li>
+          </ul>
+        </div>
+        <div class="package">
+          <h3>Standard Package</h3>
+          <p>Includes medium decor, backdrops, florals, and table styling.</p>
+          <p><strong>$500+</strong></p>
+          <ul>
+            <li>Everything in Basic</li>
+            <li>Additional floral arrangements</li>
+            <li>Custom themed decorations</li>
+            <li>Lighting setup</li>
+          </ul>
+        </div>
+        <div class="package">
+          <h3>Premium Package</h3>
+          <p>Full service decor for large events. Custom themes and premium materials.</p>
+          <p><strong>$800+</strong></p>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>Exclusive custom designs</li>
+            <li>Full venue decoration</li>
+            <li>Specialty lighting and effects</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:rkebede24@gmail.com">rkebede24@gmail.com</a></p>
+        <p><strong>Phone 1:</strong> <a href="tel:+13016931002">(301) 693-1002</a></p>
+        <p><strong>Phone 2:</strong> <a href="tel:+14158153255">(415) 815-3255</a></p>
+        <p><strong>Address:</strong><br>
+        215 W MacArthur Blvd<br>
+        Oakland, CA 94611</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reservation Form</h2>
+      <form class="reservation-form" action="https://formsubmit.co/rkebede24@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Email or Phone</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="date">Event Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Event Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="location">Event Location</label>
+        <textarea id="location" name="location" rows="3" required></textarea>
+
+        <button type="submit">Submit Reservation</button>
+      </form>
+      <p style="font-size: 0.9em; margin-top: 10px;">* After submission, you will receive a confirmation email.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 RB Events. All rights reserved.
+  </footer>
+</body>
+</html>
